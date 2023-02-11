@@ -1,0 +1,87 @@
+.top-header {
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	background-color: var(--main-orange);
+	height: 45px;
+	z-index: 16;
+}
+
+.top-header-2 {
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	background-color: var(--main-orange);
+	height: 60px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	z-index: 15 !important;
+	position: relative;
+}
+
+.top-header-2 div {
+	display: flex;
+	flex-direction: row;
+}
+
+.top-header div {
+	padding: 5px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	width: 30%;
+}
+
+.top-header-2 div {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	width: 100%;
+}
+
+.top-header div h5 {
+	font-family: var(--font-roboto);
+	font-weight: 400;
+	margin-left: 4px;
+	font-size: 0.8rem;
+}
+.top-header-2 div h5 {
+	font-family: var(--font-roboto);
+	font-weight: bold;
+	margin-left: 4px;
+	font-size: 0.8rem;
+}
+
+@media screen and (max-width: 990px) {
+	.contant-box,
+	.email-box {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 545px) {
+	.top-header-2 {
+		height: 80px;
+	}
+
+	.address-box .icon {
+		margin-top: -10px;
+	}
+
+	.address-box {
+		width: 90% !important;
+	}
+}
+
+.pnumber {
+	color: white;
+}

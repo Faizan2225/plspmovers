@@ -1,0 +1,42 @@
+.cr-block {
+	width: 100vw;
+	height: 20px;
+	text-align: center;
+	font-family: sans-serif;
+	background-color: #18213a;
+	border-top: 1px solid white;
+	color: white;
+	font-size: 1rem;
+	font-weight: 100;
+	padding: 8px;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	margin: auto;
+}
+
+@media screen and (max-width: 650px) {
+	.cr-block {
+		font-size: 0.9rem;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	.cr-block {
+		font-size: 0.9rem;
+		letter-spacing: 0.5px;
+	}
+}
+
+@media screen and (max-width: 460px) {
+	.cr-block {
+		font-size: 0.8rem;
+		letter-spacing: 0.3px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.cr-block {
+		font-size: 0.8rem;
+		letter-spacing: 0.1px;
+	}
+}

@@ -1,0 +1,115 @@
+.serviceblock {
+	width: 100vw;
+	display: flex;
+	height: 250px;
+	overflow: hidden !important;
+	font-family: var(--font-roboto);
+	font-weight: 400;
+	overflow: hidden;
+	position: relative;
+	overflow: hidden !important;
+	justify-content: space-between;
+	border-bottom: 1px solid var(--main-purple);
+	margin-top: 30px;
+}
+
+.serviceblock-1 {
+	width: 40%;
+	overflow: hidden !important;
+}
+
+.serviceblock-1 h3 {
+	color: white;
+	overflow: hidden !important;
+
+	z-index: 99;
+}
+
+.serviceblock-2 {
+	overflow: hidden !important;
+
+	width: 60%;
+}
+
+.serviceblock-2 h2 {
+	overflow: hidden !important;
+	color: var(--main-orange);
+}
+
+.serviceblock-2 > div {
+	width: 80%;
+	margin: auto;
+	height: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	overflow: hidden !important;
+	flex-direction: column;
+}
+
+.dark-div {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: #52009217;
+	overflow: hidden !important;
+	position: absolute;
+}
+
+.service-heading-s {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	height: 33px;
+	justify-content: space-between;
+	overflow: hidden !important;
+}
+
+.service-heading-s hr {
+	border: none;
+	background-color: var(--main-purple);
+	height: 1.5px;
+	width: 50%;
+}
+
+@media screen and (max-width: 920px) {
+	.service-heading-s {
+		font-size: 0.9rem;
+	}
+
+	.serviceblock-2 div p {
+		font-size: 0.9rem;
+	}
+}
+@media screen and (max-width: 650px) {
+	.service-heading-s {
+		font-size: 0.8rem;
+	}
+
+	.serviceblock-2 div p {
+		font-size: 0.8rem;
+	}
+
+	.serviceblock {
+		height: 400px;
+	}
+
+	.serviceblock-1 {
+		height: 60%;
+		width: 100%;
+	}
+	.serviceblock-2 {
+		height: 40%;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.serviceblock {
+		height: 550px;
+	}
+
+	.service-heading-s {
+		width: 70%;
+		height: 28px;
+	}
+}

@@ -1,0 +1,45 @@
+.header {
+	height: 40px;
+	background-color: #18213a;
+	display: flex;
+}
+
+.header-links-box {
+	display: flex;
+	margin: 0px auto 0px auto;
+	width: 500px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+h4 {
+	color: white;
+	font-family: var(--font-roboto);
+	letter-spacing: 1px;
+	font-weight: 500;
+	font-size: 1rem;
+}
+
+.header-links-box div {
+	width: 6rem;
+	height: 100%;
+	margin: 0px;
+	align-items: center;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+.header-links-box div:hover {
+	background-color: var(--main-purple);
+}
+
+@media screen and (max-width: 550px) {
+	.header-links-box {
+		width: 400px;
+	}
+
+	h4 {
+		font-size: 0.9rem;
+	}
+}
