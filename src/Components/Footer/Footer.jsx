@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import logo from "../../assets/logo.png";
 
 const Footer = () => {
 	return (
@@ -58,7 +59,7 @@ const Footer = () => {
 				</div>
 			</div>
 			<div className="nav-right">
-				<img src="/src/assets/logo.png" alt="" />
+				<img src={logo} alt="" />
 			</div>
 		</footer>
 	);

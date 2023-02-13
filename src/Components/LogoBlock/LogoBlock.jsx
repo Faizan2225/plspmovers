@@ -38,26 +38,26 @@ const LogoBlock = () => {
 				</Link>
 				<hr />
 				<Link
-					to="/about"
-					onClick={handleMenuClick}
-					style={{ textDecoration: "none" }}
-				>
-					<div>About Us</div>
-				</Link>
-				<hr />
-				<Link
 					to="/contact"
 					onClick={handleMenuClick}
 					style={{ textDecoration: "none" }}
 				>
 					<div>Contact Us</div>
 				</Link>
+				<hr />
+				<Link
+					to="/gallery"
+					onClick={handleMenuClick}
+					style={{ textDecoration: "none" }}
+				>
+					<div>Gallery</div>
+				</Link>
 			</div>
 			<div className="logo-block">
 				<div>
 					<img src={logo} alt="" className="logo-block-img" />
 					<div className="logo-block-inner">
-						<h3 className="logo-block-h3">PACIFIC Logistics Service</h3>
+						<h3 className="logo-block-h3">PACIFIC Logistics Services</h3>
 						<h6>Pakistan</h6>
 					</div>
 				</div>

@@ -1,9 +1,16 @@
 import React from "react";
-import banner1 from "../../assets/banners/3.png";
-import banner2 from "../../assets/banners/2.png";
 import "./Home.css";
 import useWindowWidth from "../../Hooks/useScreenWidth/useScreenWidth";
 import ServiceCard from "../../Components/ServicesCard/ServiceCard";
+
+//pics import
+import banner1 from "../../assets/banners/3.png";
+import banner2 from "../../assets/banners/2.png";
+import director from "../../assets/team/1.jpeg";
+import frontlogo from "../../assets/banners/4.jpg";
+import materials from "../../assets/cardimg/materials.jpg";
+import p from "../../assets/cardimg/p.jpg";
+import l from "../../assets/cardimg/l.jpg";
 
 const Home = () => {
 	const width = useWindowWidth();
@@ -35,7 +42,7 @@ const Home = () => {
 							with a peace of mind. Choose PLSP for a truly stress-free
 							logistics experience.
 						</p>
-						<img src="/src/assets/banners/4.jpg" alt="" />
+						<img src={frontlogo} alt="" />
 					</div>
 				</div>
 				<div className="intro-heading">
@@ -44,22 +51,22 @@ const Home = () => {
 				</div>
 				<div className="services-box">
 					<ServiceCard
-						heading="Materials"
-						text="Our materials services provide top-notch solutions for your supply chain needs. From sourcing to distribution, we handle it all. Our team will work with you to understand your needs and deliver the right materials, at the right time and cost."
+						heading="Door to Door Delivery"
+						text="Our door-to-door service guarantees that your packages will be delivered promptly and in perfect condition. Choose PLSP for all your shipping and delivery needs and experience the convenience and reliability of our door-to-door service."
 						className="service-card-2"
-						img="/src/assets/cardimg/materials.jpg"
+						img={materials}
 					/>
 					<ServiceCard
 						heading="Packaging"
 						text="Our packaging services ensure that your products are handled with care and reach their destination safely. Our team will work with you to design a customized packaging solution to meet your specific needs. Trust PLSP to deliver your products with care."
 						className="service-card-2"
-						img="/src/assets/cardimg/p.jpg"
+						img={p}
 					/>
 					<ServiceCard
 						heading="Logistics"
 						text="Our team at PLSP is dedicated to taking care of every step of the process. Trust PLSP for effortless logistics. Our team delivers reliable, on-time shipments. Cost-effective solutions and customer-first approach. PLSP: your partner for smooth logistics."
 						className="service-card-2"
-						img="/src/assets/cardimg/l.jpg"
+						img={l}
 					/>
 				</div>
 				<div className="intro-heading">
@@ -114,7 +121,11 @@ const Home = () => {
 					<hr />
 				</div>
 				<div className="team-block">
-					<img src="/src/" alt="" />
+					<img src={director} alt="" />
+					<div className="team-block-2">
+						<h3>Chaudhary Azhar Bilal</h3>
+						<a href="tel:+9">+92-321-4264526</a>
+					</div>
 				</div>
 			</div>
 		</>

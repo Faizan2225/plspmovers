@@ -23,13 +23,13 @@ const Header = () => {
 						</Link>
 					</div>
 					<div>
-						<Link to="/about" style={{ textDecoration: "none" }}>
-							<h4>About Us</h4>
+						<Link to="/contact" style={{ textDecoration: "none" }}>
+							<h4>Contact Us</h4>
 						</Link>
 					</div>
 					<div>
-						<Link to="/contact" style={{ textDecoration: "none" }}>
-							<h4>Contact Us</h4>
+						<Link to="/gallery" style={{ textDecoration: "none" }}>
+							<h4>Gallery</h4>
 						</Link>
 					</div>
 				</div>

@@ -9,10 +9,11 @@ import Home from "./Pages/Home/Home";
 import Quote from "./Components/Get a Quote/quote";
 import Footer from "./Components/Footer/Footer";
 import Contact from "./Pages/Contact/Contact";
+import Gallery from "./Pages/Gallery/Gallery";
 
 function App() {
 	return (
-		<Router>
+		<>
 			<TopHeader />
 			<LogoBlock />
 			<Header />
@@ -20,13 +21,14 @@ function App() {
 				<Route path="/" element={<Home />} />
 				<Route path="/services" element={<Services />} />
 				<Route path="/contact" element={<Contact />} />
+				<Route path="/gallery" element={<Gallery />} />
 			</Routes>
 			<Quote />
 			<Footer />
 			<div className="cr-block">
 				<h5>PLSP Movers & Movers © 2023 All Rights Reserved.</h5>
 			</div>
-		</Router>
+		</>
 	);
 }
 
